@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ABF6F58-615F-4A1C-A326-FB0A3C3D8A5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Digital_Airlience_Systems</RootNamespace>
+    <AssemblyName>Digital Airlience Systems</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookseat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookseat.Designer.cs">
+      <DependentUpon>bookseat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelticket.Designer.cs">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="citiesplane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="citiesplane.Designer.cs">
+      <DependentUpon>citiesplane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalAirlienceDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalAirlienceDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="foodorders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foodorders.Designer.cs">
+      <DependentUpon>foodorders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelbook.Designer.cs">
+      <DependentUpon>hotelbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotellist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotellist.Designer.cs">
+      <DependentUpon>hotellist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderfood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderfood.Designer.cs">
+      <DependentUpon>orderfood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recent flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recent flight.Designer.cs">
+      <DependentUpon>recent flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serverconnection.cs" />
+    <Compile Include="updateshedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateshedule.Designer.cs">
+      <DependentUpon>updateshedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewroom.Designer.cs">
+      <DependentUpon>viewroom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookseat.resx">
+      <DependentUpon>bookseat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelticket.resx">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="citiesplane.resx">
+      <DependentUpon>citiesplane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foodorders.resx">
+      <DependentUpon>foodorders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelbook.resx">
+      <DependentUpon>hotelbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotellist.resx">
+      <DependentUpon>hotellist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderfood.resx">
+      <DependentUpon>orderfood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="recent flight.resx">
+      <DependentUpon>recent flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateshedule.resx">
+      <DependentUpon>updateshedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewroom.resx">
+      <DependentUpon>viewroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DigitalAirlienceDataSet.xsc">
+      <DependentUpon>DigitalAirlienceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet.xss">
+      <DependentUpon>DigitalAirlienceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet1.xsc">
+      <DependentUpon>DigitalAirlienceDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet1.xss">
+      <DependentUpon>DigitalAirlienceDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet2.xsc">
+      <DependentUpon>DigitalAirlienceDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet2.xss">
+      <DependentUpon>DigitalAirlienceDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet3.xsc">
+      <DependentUpon>DigitalAirlienceDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet3.xss">
+      <DependentUpon>DigitalAirlienceDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet4.xsc">
+      <DependentUpon>DigitalAirlienceDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet4.xss">
+      <DependentUpon>DigitalAirlienceDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet5.xsc">
+      <DependentUpon>DigitalAirlienceDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet5.xss">
+      <DependentUpon>DigitalAirlienceDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet6.xsc">
+      <DependentUpon>DigitalAirlienceDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet6.xss">
+      <DependentUpon>DigitalAirlienceDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet7.xsc">
+      <DependentUpon>DigitalAirlienceDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalAirlienceDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalAirlienceDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalAirlienceDataSet7.xss">
+      <DependentUpon>DigitalAirlienceDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
